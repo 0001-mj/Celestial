@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{13b527fa-8dbd-4591-9168-b159a6c9c32f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Utilities">
+      <UniqueIdentifier>{94a7b2ea-e973-4f50-b044-18b3255cda29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Athena">
+      <UniqueIdentifier>{2d6311af-aa18-4464-83df-2eb236551d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{2d3c9d84-4033-4ae7-878f-04195fa5a36a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\SDK">
+      <UniqueIdentifier>{7ea5535e-aee7-4a35-9b2d-48447d42e180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\SDK\CPP">
+      <UniqueIdentifier>{009a82e3-9f2c-4ad6-9a19-742841ca5998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\minhook">
+      <UniqueIdentifier>{4f610d78-a703-4e93-8e4c-60cf23e61a8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NameCollisions.inl">
+      <Filter>Resources\SDK</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PropertyFixup.hpp">
+      <Filter>Resources\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.hpp">
+      <Filter>Resources\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="UnrealContainers.hpp">
+      <Filter>Resources\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Headers\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Shared.h">
+      <Filter>Headers\Athena</Filter>
+    </ClInclude>
+    <ClInclude Include="Native.h">
+      <Filter>Headers\Athena</Filter>
+    </ClInclude>
+    <ClInclude Include="Trampoline.h">
+      <Filter>Headers\Athena</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\minhook.h">
+      <Filter>Resources\minhook</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SDK\Basic.cpp">
+      <Filter>Resources\SDK\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Engine_functions.cpp">
+      <Filter>Resources\SDK\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\CoreUObject_functions.cpp">
+      <Filter>Resources\SDK\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\FortniteGame_functions.cpp">
+      <Filter>Resources\SDK\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Entry.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="minhook\minhook.lib">
+      <Filter>Resources\minhook</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
