@@ -61,7 +61,7 @@ private:
 		auto SetWorld = reinterpret_cast<void(*)(UNetDriver * NetDriver, UWorld * World)>(ModuleBase + 0x27080E0);
 		auto FindCollectionByType = reinterpret_cast<FLevelCollection * (*)(UWorld * World, ELevelCollectionType LevelCollectionType)>(ModuleBase + 0x29DB200);
 
-		auto GameNetDriver = DefaultObject<UKismetStringLibrary>()->Conv_StringToName(FString(L"GameNetDriver"));
+		auto GameNetDriver = UKismetStringLibrary::Conv_StringToName(FString(L"GameNetDriver"));
 		if (reinterpret_cast<bool(*)(UEngine * Engine, UWorld * World, FName NetDriverName, FName NetDriverDefinition)>(ModuleBase + 0x2975CB0)(GEngine, World, GameNetDriver, GameNetDriver))
 		{
 			World->NetDriver = reinterpret_cast<UNetDriver * (*)(UEngine * Engine, UWorld*, FName NetDriverName)>(ModuleBase + 0x2980C70)(GEngine, World, GameNetDriver);
